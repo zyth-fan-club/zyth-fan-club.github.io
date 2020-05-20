@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Frame Left</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link href="zfc.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style9 {font-size: x-small}
+.style10 {color: #CC0000}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('buttons/zfcUp.png','buttons/zfcOver.png','buttons/nastanakDown.png','buttons/nastanakOver.png','buttons/filozofijaDown.png','buttons/filozofijaOver.png','buttons/clanoviDown.png','buttons/clanoviOver.png','buttons/tehzythDown.png','buttons/tehzythOver.png','buttons/disclaimerDown.png','buttons/disclaimerOver.png','buttons/trojicaDown.png','buttons/trojicaOver.png')">
+ <div id="Layer1" style="position:absolute; left:9px; top:326px; width:207px; height:225px; z-index:1">
+   <p align="left">&nbsp;</p>
+   <p align="center" class="style9"><span class="style10">Ovo je jedini pravi Zyth Fan Club,<br>
+    ko tvrdi druga�ije la�e.<br>
+    Sva prava su rezervisana.<br>
+    Ko sa Zythom Dotu nije igrao, <br>
+    ni�ta u �ivotu nije uradio.<br>
+   Hosted by FatRat.</span></p>
+ </div>
+ <table border="0" cellpadding="0" cellspacing="0">
+   <tr>
+     <td><a href="zythfanclub.htm" target="main" onClick="MM_nbGroup('down','group1','zfc','buttons/zfcDown.png',1)" onMouseOver="MM_nbGroup('over','zfc','buttons/zfcOver.png','buttons/zfcOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/zfcDown.png" alt="Zyth Fan Club" name="zfc" border="0" onload="MM_nbGroup('init','group1','zfc','buttons/zfcUp.png',1)"></a></td>
+   </tr>
+   <tr>
+     <td><a href="nastanak.htm" target="main" onClick="MM_nbGroup('down','group1','nastanak','buttons/nastanakDown.png',1)" onMouseOver="MM_nbGroup('over','nastanak','buttons/nastanakOver.png','buttons/nastanakOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/nastanakUp.png" alt="Nastanak ZFC-a" name="nastanak" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="filozofija.htm" target="main" onClick="MM_nbGroup('down','group1','filozofija','buttons/filozofijaDown.png',1)" onMouseOver="MM_nbGroup('over','filozofija','buttons/filozofijaOver.png','buttons/filozofijaOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/filozofijaUp.png" alt="Filozofija ZFC-a" name="filozofija" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="trojica.htm" target="main" onClick="MM_nbGroup('down','group1','trojica','buttons/trojicaDown.png',1)" onMouseOver="MM_nbGroup('over','trojica','buttons/trojicaOver.png','buttons/trojicaOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/trojicaUp.png" alt="Prvobitna Trojica" name="trojica" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="clanovi.htm" target="main" onClick="MM_nbGroup('down','group1','clanovi','buttons/clanoviDown.png',1)" onMouseOver="MM_nbGroup('over','clanovi','buttons/clanoviOver.png','buttons/clanoviOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/clanoviUp.png" alt="Ostali �lanovi" name="clanovi" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="tehzyth.htm" target="main" onClick="MM_nbGroup('down','group1','tehzyth','buttons/tehzythDown.png',1)" onMouseOver="MM_nbGroup('over','tehzyth','buttons/tehzythOver.png','buttons/tehzythOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/tehzythUp.png" alt="teh_Zyth" name="tehzyth" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="galerija.htm" target="main" onClick="MM_nbGroup('down','group1','galerija','buttons/disclaimerDown.png',1)" onMouseOver="MM_nbGroup('over','galerija','buttons/disclaimerOver.png','buttons/disclaimerOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/disclaimerUp.png" alt="Galerija" name="galerija" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+   <tr>
+     <td><a href="disclaimer.htm" target="main" onClick="MM_nbGroup('down','group1','disclaimer','buttons/disclaimerDown.png',1)" onMouseOver="MM_nbGroup('over','disclaimer','buttons/disclaimerOver.png','buttons/disclaimerOver.png',1)" onMouseOut="MM_nbGroup('out')"><img src="buttons/disclaimerUp.png" alt="Disclaimer" name="disclaimer" width="200" height="44" border="0" onload=""></a></td>
+   </tr>
+</table>
+ <p>&nbsp;</p>
+ <p align="left">&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+	background-color: #000000;
+}
+body,td,th {
+	color: #E0DFE3;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+}
+a:link {
+	color: #CC0000;
+}
+a:visited {
+	color: #990000;
+}
+a:hover {
+	color: #FF0000;
+}
+a:active {
+	color: #CC0000;
+}
